@@ -53,6 +53,9 @@ const checkWeight = (fontname) => {
 		case /Regular/.test(fontname):
 			weight = 400;
 			break;
+		case /Book/.test(fontname):
+			weight = 400;
+			break;
 		case /Medium/.test(fontname):
 			weight = 500;
 			break;
@@ -61,6 +64,9 @@ const checkWeight = (fontname) => {
 			break;
 		case /Bold/.test(fontname):
 			weight = 700;
+			break;
+		case /Heavy/.test(fontname):
+			weight = 800;
 			break;
 		case /Black/.test(fontname):
 			weight = 900;
@@ -182,11 +188,12 @@ const watchfiles = () => {
 	});
 	watch('./src/sass/**/*.sass', styles);
 	watch('./src/html/*.html', htmlInclude);
+	watch('./src/pages/*.html', htmlInclude);
 	watch('./src/*.html', htmlInclude);
 	watch('./src/img/**.jpg', imgToApp);
 	watch('./src/img/**.jpeg', imgToApp);
 	watch('./src/img/**.png', imgToApp);
-	watch('./src/img/**.svg', svgSprites)
+	watch('./src/img/svg/**.svg', svgSprites)
 	watch('./src/resources/**', resources)
 	watch('./src/fonts/**.ttf', fonts)
 	watch('./src/fonts/**.ttf', fontsStyle)

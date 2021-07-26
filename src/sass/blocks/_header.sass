@@ -1,0 +1,125 @@
+.header
+  position: relative
+  padding: 9px 0 9px 0
+.header-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+.header-callback
+  position: absolute
+  right: 0
+  top: 0
+  height: 100px
+  background-color: $main-color
+  color: #fff
+  width: 190px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &:before
+    position: absolute
+    content: ''
+    width: 0px
+    height: 0px
+    border-left: 23px solid transparent
+    border-bottom: 100px solid $main-color
+    left: -23px
+.header-logo
+  display: flex
+  align-items: center
+  & img
+    margin-right: 14px
+.header__title
+  margin-bottom: 1px
+.header__subtitle
+  font-size: 18px
+  font-weight: 300
+.header-form
+  position: relative
+.header-form__input
+  width: 265px
+  height: 58px
+  border-radius: 40px
+  border: 1px solid #DCDCDC
+  padding: 20px 16px
+.header-form__submit
+  width: 48px
+  height:48px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background-color: #dedede
+  border: none
+  position: absolute
+  right: 5px
+  top: 5px
+  & svg
+    width: 14px
+.header-social
+  display: flex
+  flex-direction: column
+.header-social__title
+  font-size: 14px
+  font-weight: 300
+  position: relative
+  margin-left: 7px
+  margin-bottom: 5px
+  &:before
+    position: absolute
+    content: ''
+    width: 4px
+    height: 4px
+    background: $main-color
+    top: 50%
+    margin-top: -2px
+    left: -7px
+.header-socials
+  display: flex
+.header-social__button
+  width: 35px
+  height: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  border-radius: 50%
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
+  & svg
+    width: 13px
+.header-phones__icon
+  width: 44px
+  height: 44px
+  background: $main-grad
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 15px
+  & svg
+    width: 14px
+.header-phones
+  display: flex
+.header-phones-block
+  display: flex
+  flex-direction: column
+.header-phones__link
+  font-size: 18px
+  font-weight: 500
+.header-callback__title
+  font-size: 14px
+.header-callback__button
+  font-weight: 800
+  font-size: 16px
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background: #fff
+    left: 0
+    bottom: -2px
