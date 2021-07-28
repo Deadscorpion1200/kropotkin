@@ -31,3 +31,23 @@ input, button
   cursor: pointer
 input:focus
   border: 1px solid $main-color
+.current-item
+  color: $light-color
+.has-submenu
+  position: relative
+  &::after
+    content: ''
+    background: url('../img/sprite.svg#has-submenu')
+    width: 8px
+    height: 8px
+    position: absolute
+    top: 50%
+    right: -16px
+    transition: .2s
+    margin-top: -4px
+@media (min-width: 992px)
+  .has-submenu:hover
+    &::after
+      transition: .2s
+      transform: rotate(180deg)
+      
