@@ -184,7 +184,7 @@ const watchfiles = () => {
 		server: { baseDir: './app' },
 		notify: false,
 		host: devip(),
-		// tunnel: true
+		tunnel: true
 	});
 	watch('./src/sass/**/*.sass', styles);
 	watch('./src/html/*.html', htmlInclude);

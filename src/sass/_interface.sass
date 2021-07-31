@@ -1,10 +1,12 @@
 $main-color: #095830
 $light-color: #1A893A
 $main-grad: linear-gradient(180deg, #1A893A 0%, #095830 100%)
+$footer: #292929
 body
   margin: 0
   font-family: "FuturaPT"
   font-weight: 400
+  overflow-x: hidden
 h1,h2,h3,h4,h5,h6,p
   margin: 0
   padding: 0
@@ -45,9 +47,80 @@ input:focus
     right: -16px
     transition: .2s
     margin-top: -4px
+.button
+  height: 69px
+  font-size: 24px
+  border: none
+  border-radius: 48px
+  transition: .2s
+.button-grad
+  color: #fff
+  background: $main-grad
+  padding: 19px 51px
+  transition: .2s
+.button-o
+  background: #fff
+  border: 1px solid $light-color
+  color: $light-color
+  transition: .2s
+.button-more 
+  padding: 19px 89px 19px 63px
+  position: relative
+  transition: .2s
+.button-more__icon
+  position: absolute
+  top: 50%
+  margin-top: -7px
+  margin-left: 11px
+  width: 15px
+  height: 15px
+  fill: $light-color
+  transition: .2s
+.link-more
+  display: inline-block
+  position: relative
+  color: $light-color
+  transition: .2s
+  font-size: 20px
+  font-weight: 500
+  &:before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background: $light-color
+    transition: .2
+    bottom: 0
+  & svg
+    position: absolute
+    width: 10px
+    height: 10px
+    right: -21px
+    top: 50%
+    margin-top: -3px
+    transition: .2s
+    fill: $light-color
 @media (min-width: 992px)
   .has-submenu:hover
     &::after
       transition: .2s
       transform: rotate(180deg)
-      
+  .button:hover
+    transition: .2s
+  .button-o:hover
+    transition: .2s 
+  .button-more:hover
+    background: $main-grad
+    color: #fff
+    transition: .2s
+    & .button-more__icon
+      transition: .2s
+      fill: #fff
+  .link-more:hover
+    transition: .2
+    &::before
+      transition: .2
+      width: 0
+    & svg
+      right: -25px
+      transition: .2s

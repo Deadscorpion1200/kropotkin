@@ -136,6 +136,16 @@
   display: block
   font-weight: 800
   font-size: 16px
+  position: relative
+  transition: .2s
+  &:before
+    content: ''
+    position: absolute
+    transition: .2s
+    width: 100%
+    height: 1px
+    background: #fff
+    bottom: 0
 .navigation
   padding-top: 15px
   padding-bottom: 15px
@@ -168,6 +178,7 @@
   width: 271px
   list-style: none
   padding: 16px 14px 11px 14px
+  z-index: 1000
   & .navigation-item
     padding-bottom: 8px
     border-bottom: 1px solid #dcdcdc
@@ -205,13 +216,19 @@
       &::before
         transition: .2s
         width: 100%
-  .navigation-item:hover
+  .header-contactus__button:hover
+    transition: .2s
+    color: $light-color
+    &:before
+      transition: .2s
+      background: $light-color
+  .navigation-list .navigation-item:hover
     transition: .2s
     &::before
       transition: .2s
       width: 100%
     & .navigation-sublist
-      display: block
+      display: block !important
   .navigation-sublist .navigation-item:hover
     &::before
       width: 100%

@@ -1,0 +1,39 @@
+.about
+  padding-top: 75px
+  padding-bottom: 51px
+.about-title
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    width: 1000%
+    background: $light-color
+    height: 1px
+    top: 50%
+    margin-top: 3px
+    margin-left: 51px
+.about__title
+  font-size: 44px
+  position: relative
+  display: inline-block
+  margin-top: 7px
+  &::after
+    content: ''
+    position: absolute
+    width: 11px
+    height: 11px
+    background: $light-color
+    border-radius: 50%
+    margin-left: 49px
+    top: 50%
+    margin-top: -2px
+.about-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+.about__text
+  width: 597px
+  & p
+    margin-bottom: 26px
+    font-size: 15px
+    line-height: 1.75
