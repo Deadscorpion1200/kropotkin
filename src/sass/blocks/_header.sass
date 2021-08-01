@@ -30,6 +30,7 @@
   & img
     margin-right: 14px
 .header__title
+  font-size: 30px
   margin-bottom: 1px
 .header__subtitle
   font-size: 18px
@@ -193,6 +194,8 @@
     &::before
       width: 0%
       left: -0px
+.header-menu
+  display: none
 @media (min-width: 992px)
   .header-social__button:hover
     background: $main-color
@@ -233,3 +236,65 @@
     &::before
       width: 100%
       left: -0px
+  .header-menu_adaptive
+    display: none
+@media (max-width: 1200px)
+  .header
+    padding-top: 9px
+    padding-bottom: 9px
+  .header__title
+    font-size: 28px
+  .header-contactus
+    display: none
+@media (max-width: 992px)
+  .header__titpxle
+    font-size: 24px
+  .header__subtitle
+    font-size: 16px
+  .header-socials
+    display: none
+  .header-menu
+    display: block
+  .header-menu__button
+    width: 35px
+    height: 22px
+    display: flex
+    justify-content: center
+    align-items: center
+    & span
+      transition: .2s
+      width: 35px
+      height: 4px
+      background: #393939
+      border-radius: 3px
+      position: relative
+      &::before
+        transition: .2s
+        content: ''
+        position: absolute
+        width: 35px
+        height: 4px
+        background: #393939
+        top: -9px
+      &::after
+        transition: .2s
+        content: ''
+        position: absolute
+        width: 35px
+        height: 4px
+        background: #393939
+        bottom: -9px
+  .header-menu__button_active
+    & span  
+      transition: .2s
+      height: 0
+      &::before
+        transition: .2s
+        top: 0
+        transform: rotate(45deg)
+      &::after
+        transition: .2s
+        top: 0
+        transform: rotate(-45deg)
+  .navigation
+    display: none

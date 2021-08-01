@@ -7,11 +7,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gulp</title>
 	<link rel="stylesheet" href="css/styles.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6349c52d-3242-4edc-b542-467c5bc23b3c" type="text/javascript"></script>
 </head>
 
 <body>
-	<!-- header -->
-	<header class="header">
+	<div class="wrapper">
+		<!-- mobmenu -->
+		<div class="mobmenu">
+  <div class="mobmenu-popup">
+    <a href="#" class="mobmenu-popup__close">
+      <span></span>
+    </a>
+    <ul class="mobmenu-list">
+      <li class="mobmenu__item">
+        <a href="#" class="mobmenu__item">Главная</a>
+      </li>
+      <li class="mobmenu__item has-submenu">
+        <button class="open-submenu">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-mobmenu"></use>
+          </svg>
+        </button>
+        <a href="#">О компании</a>
+          <ul class="mobmenu-submenu">
+            <li class="mobmenu__item"><a href="#">О компании</a></li>
+            <li class="mobmenu__item"><a href="#">Клиенты</a></li>
+            <li class="mobmenu__item"><a href="#">Документы</a></li>
+          </ul>
+      </li>
+      <li class="mobmenu__item has-submenu">
+        <button class="open-submenu">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-mobmenu"></use>
+          </svg>
+        </button>
+        <a href="#" class="mobmenu__item">
+          Каталог
+        </a>
+          <ul class="mobmenu-submenu">
+            <li class="mobmenu__item"><a href="#">Автомобилеразгрузчики</a></li>
+            <li class="mobmenu__item"><a href="#">Транспортировка зерна</a></li>
+            <li class="mobmenu__item"><a href="#">Очистка зерна</a></li>
+            <li class="mobmenu__item"><a href="#">Ёмкости для зерна</a></li>
+            <li class="mobmenu__item"><a href="#">Самотечное оборудование</a></li>
+            <li class="mobmenu__item"><a href="#">Вспомогательное оборудование</a></li>
+            <li class="mobmenu__item"><a href="#">Аспирация</a></li>
+            <li class="mobmenu__item"><a href="#">Комплектующие</a></li>
+            <li class="mobmenu__item"><a href="#">Изделия из лигированной
+              и оцинкованной стали</a></li>
+          </ul>
+      </li>
+      <li class="mobmenu__item">
+        <a href="#" class="mobmenu__item">Услуги</a>
+      </li>
+      <li class="mobmenu__item">
+        <a href="#" class="mobmenu__item">Галерея</a>
+      </li>
+      <li class="mobmenu__item">
+        <a href="#" class="mobmenu__item">Новости</a>
+      </li>
+      <li class="mobmenu__item">
+        <a href="#" class="mobmenu__item">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</div>
+		<div class="content">
+			<!-- header -->
+			<header class="header">
   <div class="container">
     <div class="header-wrap">
       <div class="header-logo">
@@ -58,6 +121,11 @@
         <span class="header-contactus__title">Есть вопросы? Закажите</span>
         <a href="#" class="header-contactus__button">Бесплатный звонок</a>
       </div>
+      <div class="header-menu_adaptive">
+        <a href="" class="header-menu__button">
+          <span></span>
+        </a>
+      </div>
     </div>
   </div>
 </header>
@@ -95,258 +163,43 @@
     </div>
   </div>
 </nav>
-	<!-- main -->
-	<main class="main">
-  <div class="main-container swiper-container">
-		<!-- Additional required wrapper -->
-		<div class="main-wrapper swiper-wrapper">
-			<!-- Slides -->
-			<div class="main-slide swiper-slide" style="background: url(img/main-slide-1.png) center; background-size: cover">
-				<div class="container">
-					<div class="main-text">
-						<h2 class="main__title">
-							<span>Завод-изготовитель</span> транспортирующего оборудования для элеваторов и мельниц
-						</h2>
-						<span class="main__subtitle">Технологическое оборудование для элеваторов, мельниц, маслозаводов и других
-							предприятий занимающихся хранением зерна, продуктов его переработки<br>
-							и сыпучих материалов</span>
-					</div>
-				</div>
-			</div>
-			<div class="main-slide swiper-slide"style="background: url(img/main-slide-1.png) center; background-size: cover">
-				<div class="container">
-					<div class="main-text">
-						<h2 class="main__title">
-							<span>Завод-изготовитель</span> транспортирующего оборудования для элеваторов и мельниц
-						</h2>
-						<span class="main__subtitle">Технологическое оборудование для элеваторов, мельниц, маслозаводов и других
-							предприятий занимающихся хранением зерна, продуктов его переработки<br>
-							и сыпучих материалов</span>
-					</div>
-				</div>
-			</div>
-			<div class="main-slide swiper-slide"style="background: url(img/main-slide-1.png) center; background-size: cover">
-				<div class="container">
-					<div class="main-text">
-						<h2 class="main__title">
-							<span>Завод-изготовитель</span> транспортирующего оборудования для элеваторов и мельниц
-						</h2>
-						<span class="main__subtitle">Технологическое оборудование для элеваторов, мельниц, маслозаводов и других
-							предприятий занимающихся хранением зерна, продуктов его переработки<br>
-							и сыпучих материалов</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- If we need pagination -->
-		<div class="main-pagination swiper-pagination"></div>
-
-	</div>
-</main>
-	<!-- products -->
-	<section class="products">
+			<!-- main -->
+			
+			<!-- products -->
+			
+			<!-- why us -->
+			
+			<!-- about -->
+			
+			<!-- maps -->
+			
+			<!-- news -->
+			
+			<!-- page-news -->
+			
+			<!-- single-news -->
+			<article class="single-news">
   <div class="container">
-    <h2 class="products__title"><span class="products-title__wrapper"><span>Наша</span> продукция</span></h2>
-    <div class="products-wrap">
-      <ul class="products-menu">
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-1.png" alt="Автомобилегрузчики" class="product-item__img">
-              <h3 class="product-item__title">Автомобиле-<br>разгрузчики</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-2.png" alt="Транспортировка зерна" class="product-item__img">
-              <h3 class="product-item__title">Транспортировка зерна</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-3.png" alt="Очистка зерна" class="product-item__img">
-              <h3 class="product-item__title">Очистка зерна</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-4.png" alt="Ёмкости для зерна" class="product-item__img">
-              <h3 class="product-item__title">Ёмкости для зерна</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-5.png" alt="Самотечное оборудование" class="product-item__img">
-              <h3 class="product-item__title">Самотечное оборудование</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-6.png" alt="Вспомогательное оборудование" class="product-item__img">
-              <h3 class="product-item__title">Вспомогательное оборудование</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-7.png" alt="Аспирация" class="product-item__img">
-              <h3 class="product-item__title">Аспирация</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-8.png" alt="Комплектующие" class="product-item__img">
-              <h3 class="product-item__title">Комплектующие</h3>
-            </div>
-          </a>
-        </li>
-        <li class="products-item">
-          <a href="#">
-            <div class="products-tile">
-              <img src="img/product-9.png" alt="Изделия из ликированной стали" class="product-item__img">
-              <h3 class="product-item__title">Изделия из ликированной стали</h3>
-            </div>
-          </a>
-        </li>
-      </ul>
+    <div class="single-news-title">
+      <h2 class="single-news__title">Lorem ipsum dolor sit amet, consectetur adipisicing </h2>
+    </div>
+    <div class="single-news-content">
+      <img src="img/article-news.png" alt="" class="single-content__img">
+      <div class="single-content__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+      </div>
+    </div>
+    <div class="single-news-gallery">
+      <img src="img/article-news.png" alt="">
+      <img src="img/article-news.png" alt="">
+      <img src="img/article-news.png" alt="">
     </div>
   </div>
-</section>
-	<!-- why us -->
-	<section class="why" style="background: url(img/why.png) center">
-  <h2 class="why__title">
-    <span class="why-title__wrapper"><span>Почему</span> мы</span>
-  </h2>
-  <div class="container">
-    <div class="why-wrapper">
-      <div class="why-column">
-        <div class="why-icon">
-          <svg>
-            <use xlink:href="img/sprite.svg#experience"></use>
-          </svg>
-        </div>
-        <div class="why-text">
-          <h3 class="why-text__title">Опыт</h3>
-          <span class="why-text__descr">За многолетнюю историю наш завод накопил колоссальный опыт. Вы можете быть уверенны в профессионализме наших специалистов</span>
-        </div>
-      </div>
-      <div class="why-column">
-        <div class="why-icon">
-          <svg>
-            <use xlink:href="img/sprite.svg#quality"></use>
-          </svg>
-        </div>
-        <div class="why-text">
-          <h3 class="why-text__title">Высочайшее качество</h3>
-          <span class="why-text__descr">Техника от «ПРОМСТРОЙКОМПЛЕКТ» - это гарантия качества и долгосрочная эксплуатация</span>
-        </div>
-      </div>
-      <div class="why-column">
-        <div class="why-icon">
-          <svg>
-            <use xlink:href="img/sprite.svg#prices"></use>
-          </svg>
-        </div>
-        <div class="why-text">
-          <h3 class="why-text__title">Отличные цены</h3>
-          <span class="why-text__descr">Мы сформировали приемлемый уровень цен, а значит с нами выгодно</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-	<!-- about -->
-	<section class="about">
-  <div class="container">
-    <div class="about-title">
-      <h2 class="about__title">
-        О компании
-      </h2>
-    </div>
-    <div class="about-wrapper">
-      <div class="about__img">
-        <img src="img/about.png" alt="Изображение компании">
-      </div>
-      <div class="about__text">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-        </p>
-        <button class="button button-o button-more">Подробнее
-          <svg class="button-more__icon">
-            <use xlink:href="img/sprite.svg#more"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-	<!-- news -->
-	<section class="news">
-  <div class="container">
-    <div class="news-title">
-      <h2 class="news__title">
-        Новости
-      </h2>
-    </div>
-    <div class="news-wrap">
-      <div class="news-item">
-        <img src="img/article-news.png" alt="" class="news-item__img">
-        <div class="news-item__text">
-          <span class="news-text__date">09.03.2021</span>
-          <h3 class="news-text__title">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-          <span class="news-text__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-          <a href="#" class="link-more">Подробнее
-            <svg>
-              <use xlink:href="img/sprite.svg#more"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="news-item">
-        <img src="img/article-news.png" alt="" class="news-item__img">
-        <div class="news-item__text">
-          <span class="news-text__date">09.03.2021</span>
-          <h3 class="news-text__title">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-          <span class="news-text__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-          <a href="#" class="link-more">Подробнее
-            <svg>
-              <use xlink:href="img/sprite.svg#more"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="news-item">
-        <img src="img/article-news.png" alt="" class="news-item__img">
-        <div class="news-item__text">
-          <span class="news-text__date">09.03.2021</span>
-          <h3 class="news-text__title">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-          <span class="news-text__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
-          <a href="#" class="link-more">Подробнее
-            <svg>
-              <use xlink:href="img/sprite.svg#more"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <button class="button button-grad news-more">Читать все новости</button>
-  </div>
-</section>
-	<!-- footer -->
-	<div class="footer">
+</article>
+			<!-- footer -->
+			<div class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-first">
@@ -439,9 +292,9 @@
     </div>
   </div>
 </div>
-
+		</div>
+	</div>
 	<script src="scripts/scripts.js"></script>
-
 	<!-- Вызов спрайта -->
 	<!--<svg>
 		<use xlink:href="img/sprite.svg#safe"></use>

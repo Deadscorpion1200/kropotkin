@@ -1,0 +1,178 @@
+.page-news
+  padding-bottom: 45px
+.page-news-title
+  position: relative
+  margin-bottom: 40px
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1px
+    background: $light-color
+    top: 50%
+    margin-top: 4px
+    margin-left: 39px
+.page-news__title
+  font-size: 44px
+  display: inline-block
+  &::after
+    content: ''
+    position: absolute
+    width: 11px
+    height: 11px
+    background: $light-color
+    border-radius: 50%
+    top: 50%
+    margin-left: 34px
+    margin-top: -1px
+.page-news-articles
+  display: flex
+  justify-content: space-between
+.page-news-actual
+  width: 413px
+  height: 640px
+  border-radius: 10px
+  position: relative
+  overflow: hidden
+.page-actual-container
+  position: relative
+.page-actual__slide
+  & img
+    object-fit: cover
+.page-actual-arrows
+  display: flex
+  justify-content: space-between
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -195px
+  width: 390px
+  margin-top: -24px
+.page-actual__prev, .page-actual__next
+  width: 47px
+  height: 47px
+  background: rgba(255,255,255,.7)
+  top: 0
+  display: block
+  z-index: 4
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  & svg
+    width: 18px
+    height: 18px
+.page-actual-excerpt
+  position: absolute
+  bottom: -60px
+  transition: .2s
+  background: rgba(0,0,0,.6)
+  z-index: 3
+  border-radius: 10px
+  left: 0
+  color: #fff
+  padding: 26px 36px 25px 22px
+.page-actual__title
+  font-size: 24px
+  font-weight: 400
+  margin-bottom: 20px
+.page-actual__excerpt
+  font-size: 20px
+  font-weight: 300
+  & span
+    color: $light-color
+    font-weight: 400
+.page-news-more
+  display: flex
+  flex-direction: column
+  row-gap: 20px
+.page-news-article
+  width: 845px
+  display: flex
+  justify-content: space-between
+  padding: 11px 11px 11px 35px
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+.page-article-text
+  padding-top: 11px
+  padding-bottom: 11px
+.page-article__date
+  font-size: 16px
+  color: #a3a3a3
+  margin-bottom: 8px
+.page-article__title
+  font-size: 18px
+  margin-bottom: 10px
+.page-article__excerpt
+  max-width: 485px
+  font-size: 16px
+  margin-bottom: 5px
+.page-article__more
+  display: flex
+.page-more__link
+  display: inline-block
+  font-size: 20px
+  font-weight: 500
+  color: $light-color
+  position: relative
+  transition: .2s
+  &::before
+    position: absolute
+    content: ''
+    transition: .2s
+    width: 100%
+    height: 1px
+    bottom: 0
+    background: $light-color
+.page-more__link_icon
+  width: 11px
+  height: 11px
+  position: absolute
+  fill: $light-color
+  margin-left: 10px
+  transition: .2s
+  top: 50%
+  margin-top: -5px
+.page-more__vk
+  width: 23px
+  height: 23px
+  border: $light-color solid 1px
+  background: #fff
+  margin-left: 50px
+  border-radius: 50%
+  transition: .2s
+  & svg
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 10px
+    height: 11px
+    fill: $light-color
+.page-article-img
+  width: 303px
+  height: 178px
+  overflow: hidden
+  border-radius: 10px
+  & img
+    object-fit: cover
+    object-position: 50% 50%
+@media (min-width: 992px)
+  .page-news-actual:hover
+    .page-actual-excerpt
+      bottom: 0
+      transition: .2s
+  .page-more__vk:hover
+    transition: .2s
+    background: $light-color
+    & svg
+      fill: #fff
+  .page-more__link:hover
+    transition: .2s
+    &::before
+      transition: .2s
+      width: 0
+    & .page-more__link_icon
+      transition: .2s
+      margin-left: 15px
+  
