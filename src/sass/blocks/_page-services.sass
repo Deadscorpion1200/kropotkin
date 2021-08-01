@@ -1,0 +1,76 @@
+.page-services
+  padding-bottom: 56px
+.page-services-title-wrap
+  position: relative
+  margin-bottom: 36px
+  &::after
+    content: ''
+    position: absolute
+    width: 1000%
+    height: 1px
+    background: $light-color
+    top: 50%
+    margin-top: 5px
+    margin-left: 40px
+.page-services__title
+  position: relative
+  display: inline-block
+  font-size: 44px
+  &::after
+    content: ''
+    position: absolute
+    width: 11px
+    height: 11px
+    background: $light-color
+    border-radius: 50%
+    top: 50%
+    margin-left: 34px
+.page-services-wrap
+  display: flex
+  flex-direction: column
+  row-gap: 40px
+.page-service
+  display: flex
+  align-items: center
+  &:nth-child(even)
+    flex-direction: row-reverse
+    & .page-service-description
+      text-align: right
+    & .page-service-img
+      margin-right: 0
+      margin-left: 38px
+.page-service__img
+  border-radius: 10px
+  object-fit: cover
+  width: 593px
+  height: 276px
+.page-service-img
+  position: relative
+  transition: .2s
+  overflow: hidden
+  margin-right: 38px
+  &::before
+    transition: .2s
+    content: ''
+    position: absolute
+    z-index: 3
+    background: rgba(0,0,0,.5) url('../img/service-logo.png') center no-repeat
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    transform: translateY(-100%)
+.page-service-description
+  max-width: 573px
+  & p
+    font-size: 16px
+    line-height: 30px
+.page-service-description__title
+  font-size: 38px
+  margin-bottom: 7px
+@media (min-width: 992px)
+.page-service-img:hover
+  position: relative
+  transition: .2s
+  &::before
+    transform: translateY(0)
+    transition: .2s

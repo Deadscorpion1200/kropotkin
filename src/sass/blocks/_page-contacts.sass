@@ -1,0 +1,95 @@
+.page-contacts
+  padding-bottom: 27px
+.page-phones-icon, .page-email-icon, .page-address-icon, .page-shedule-icon
+  width: 44px
+  height: 44px
+  background: $main-grad
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 13px
+  & svg
+    width: 14px
+    height: 14px
+    fill: #fff
+.page-contacts-phones, .page-contacts-emails, .page-contacts-address, .page-contact-schedule
+  display: flex
+.page-contacts-items
+  display: flex
+  justify-content: flex-start
+  column-gap: 85px
+  margin-bottom: 42px
+.page-contact__title
+  font-size: 14px
+  margin-bottom: 4px
+.page-contact-description
+  display: flex
+  flex-direction: column
+.page-contact-list
+  list-style: none
+  padding-left: 0
+  margin-top: 0
+  margin-bottom: 0
+.page-contact__item
+  font-weight: 500
+  transition: .2s
+  position: relative
+  margin-bottom: 4px
+  &::after
+    transition: .2s
+    content: ''
+    position: absolute
+    width: 0
+    height: 1px
+    background: $main-color
+    left: 0
+    bottom: 0
+.page-contact__text
+  font-weight: 500
+  max-width: 210px
+.page-contacts-contacts
+  display: flex
+  justify-content: space-between
+.page-contacts-map
+  width: 900px
+.page-contacts-form__title
+  font-size: 30px
+  margin-bottom: 8px
+.page-contacts__subtitle
+  max-width: 265px
+  display: block
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+.page-contacts__form
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-right: 28px
+.page-contacts-form
+  display: flex
+  flex-direction: column
+  align-items: center
+.page-form__input
+  padding: 24px 32px 21px 32px
+  width: 381px
+  border-radius: 40px
+  border: 1px solid #fff
+  background: #efefef
+  margin-bottom: 9px
+.page-form__textarea
+  padding: 24px 32px 5px 32px
+  width: 381px
+  height: 115px
+  border-radius: 40px
+  border: 1px solid #fff
+  margin-bottom: 9px
+.page-contacts__button
+  width: 381px
+@media (min-width: 992px)
+  .page-contact__item:hover
+    transition: .2s
+    &:after
+      width: 100%
+      transition: .2s

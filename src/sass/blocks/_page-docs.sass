@@ -1,0 +1,120 @@
+.page-docs
+  padding-bottom: 64px
+.page-docs-title-wrap
+  position: relative
+  margin-bottom: 33px
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background: $light-color
+    top: 30px
+    margin-left: 45px
+.page-docs__title
+  display: inline-block
+  font-size: 44px
+  max-width: 550px
+  & span
+    font-weight: 400
+  &::after
+    position: absolute
+    content: ''
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    background: $light-color
+    top: 25px
+    margin-left: 135px
+.page-docs-content
+  display: block
+  max-width: 800px
+  margin-bottom: 7px
+  & p
+    font-weight: 300
+    font-size: 16px
+.page-docs-word
+  font-weight: 500
+  font-size: 14px
+  display: block
+  margin-bottom: 7px
+.page-docs-wrap
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  column-gap: 10px
+  margin-bottom: 40px
+.page-docs__doc
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  width: 205px
+  padding-left: 13px
+  padding-right: 15px
+  height: 68px
+  align-items: center
+  display: flex
+  transition: .2s
+  justify-content: space-between
+  border: 1px solid #fff
+.page-doc__title
+  display: block
+  font-size: 13px
+  font-weight: 500
+  width: 128px
+  color: #1A893A
+.page-doc__button
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  width: 38px
+  height: 38px
+  background: $main-grad
+  & svg
+    width: 14px
+    height: 14px
+.page-documents-title-wrap
+  position: relative
+  margin-bottom: 43px
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background: $light-color
+    margin-left: 42px
+    top: 50%
+    margin-top: 2px  
+.page-documents__title
+  font-size: 44px
+  display: inline-block
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    margin-top: -3px
+    width: 11px
+    height: 11px
+    background: $light-color
+    border-radius: 50%
+    margin-left: 36px
+.page-documents-wrap
+  display: flex
+  justify-content: space-between
+  column-gap: 20px
+.page-document
+  transition: .2s
+.page-document__img
+  margin-bottom: 11px
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  cursor: pointer
+.page-document__title
+  font-size: 15px
+@media (min-width: 992px)
+  .page-docs__doc:hover
+    border: 1px solid $light-color
+    transition: .2s
+  .page-document:hover
+    transition: .2s
+    transform: translateY(-10px)

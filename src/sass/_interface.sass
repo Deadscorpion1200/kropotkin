@@ -33,8 +33,9 @@ h1,h2,h3,h4,h5,h6,p
   .container
     width: 100%
     padding: 0 10px 0 10px
-input, button
+input, button, textarea
   cursor: pointer
+  outline: none
 input:focus
   border: 1px solid $main-color
 .current-item
@@ -135,6 +136,8 @@ input:focus
     & .button-more__icon
       transition: .2s
       fill: #fff
+  textarea:focus
+    border: 1px solid $light-color
   .link-more:hover
     transition: .2
     &::before
