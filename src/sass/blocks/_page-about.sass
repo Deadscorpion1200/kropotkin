@@ -1,0 +1,73 @@
+.about-page
+  padding-bottom: 48px
+.about-page .about-title
+  margin-bottom: 22px
+.page-about-content
+  display: flex
+  justify-content: space-between
+.page-about-text
+  max-width: 683px
+  & p, .page-about-content_p
+    font-weight: 300
+    font-size: 16px
+    line-height: 30px
+.page-about__img
+  float: right
+.page-about-content_p
+  font-weight: 300
+  font-size: 16px
+  line-height: 30px
+  margin-bottom: 22px
+.about-page-advantages
+  display: flex
+  justify-content: space-around
+  margin-bottom: 70px
+.about-page-advantage
+  display: flex
+  flex-direction: column
+  align-items: center
+.about-advantage__icon
+  width: 88px
+  height: 88px
+  border-radius: 50%
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 20px
+  & svg
+    width: 39px
+    height: 39px
+    fill: $light-color
+.about-advantage__text
+  font-weight: 800
+  font-size: 18px
+.about-works-wrap
+  display: flex
+  flex-direction: column
+  row-gap: 40px
+.about-works
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  align-items: center
+  row-gap: 40px
+  & img
+    margin-right: 40px
+    object-fit: cover
+    height: 276px
+    border-radius: 10px
+    width: 593px
+  &:nth-child(even)
+    justify-content: flex-start
+    flex-direction: row-reverse
+    & img
+      margin-right: 0
+      margin-left: 40px
+    & .about-works__text
+      text-align: right
+.about-works__text
+  max-width: 573px
+  font-weight: 300
+  font-size: 16px
+  line-height: 30px
