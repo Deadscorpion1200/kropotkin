@@ -98,11 +98,16 @@
     background: $light-color
     border-radius: 50%
     margin-left: 36px
+.page-documents-container
+  overflow: hidden
 .page-documents-wrap
   display: flex
   justify-content: space-between
-  column-gap: 20px
+  column-gap: 30px
+  padding-top: 20px
+  padding-bottom: 20px
 .page-document
+  width: 230px
   transition: .2s
 .page-document__img
   margin-bottom: 11px
@@ -111,6 +116,10 @@
   cursor: pointer
 .page-document__title
   font-size: 15px
+@media (max-width: 1200px)
+  .page-documents-wrap
+    column-gap: 0
+    
 @media (min-width: 992px)
   .page-docs__doc:hover
     border: 1px solid $light-color
@@ -118,3 +127,18 @@
   .page-document:hover
     transition: .2s
     transform: translateY(-10px)
+@media (max-width: 1200px)
+  .page-docs-wrap
+    flex-wrap: wrap
+  .page-docs__doc
+    margin-bottom: 10px
+@media (max-width: 991px)
+  .page-docs__title
+    font-size: 20px
+    max-width: 260px
+  .page-docs__title::after
+    margin-left: 80px
+  .page-docs-title-wrap::after
+    margin-left: 30px
+  .page-documents__title
+    font-size: 20px

@@ -1,0 +1,37 @@
+.page-404
+  padding-bottom: 60px
+.page-404-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+.page-block__first
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+.page-block-first__title
+  font-size: 44px
+  margin-bottom: 20px
+.page-block-first__subtitle
+  font-size: 18px
+  display: block
+  margin-bottom: 35px
+.page-block-first__button
+  margin-left: 0
+@media (max-width: 992px)
+  .page-404-wrapper
+    flex-wrap: wrap-reverse
+  .page-block__first
+    align-items: center
+  .page-block-first__subtitle
+    text-align: center
+  .page-block-first__button
+    margin-left: auto
+    margin-right: auto
+@media (max-width: 576px)
+  .page-block-first__title
+    font-size: 20px
+  .page-block-first__subtitle
+    font-size: 14px
+  .page-block-first__button
+    font-size: 18px
+    width: 100%

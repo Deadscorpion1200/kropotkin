@@ -1,0 +1,40 @@
+.page-privacy__description
+  ol 
+    list-style: none
+    counter-reset: li
+    padding-left: 0
+    li
+      font-weight: 700
+      margin-bottom: 20px
+      text-transform: uppercase
+      &::before
+        position: relative
+        display: inline-block
+        counter-increment: li
+        content: counters(li,".") ". "
+      ol
+        list-style: none
+        counter-reset: li
+        li 
+          font-weight: 400
+          text-transform: none
+          margin-bottom: 20px
+      
+          &::before
+            position: relative
+            display: inline-block
+            counter-increment: li
+            content: counters(li,".") ". "
+          ol        
+            list-style: none
+            counter-reset: li
+            li
+              margin-bottom: 20px    
+              &:first-child
+                margin-top: 20px
+              &::before
+                position: relative
+                display: inline-block
+                counter-increment: li
+                content: counters(li,".") ". "
+        

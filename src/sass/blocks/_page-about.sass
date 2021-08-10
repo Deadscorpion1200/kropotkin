@@ -6,7 +6,7 @@
   display: flex
   justify-content: space-between
 .page-about-text
-  max-width: 683px
+  width: 683px
   & p, .page-about-content_p
     font-weight: 300
     font-size: 16px
@@ -67,7 +67,39 @@
     & .about-works__text
       text-align: right
 .about-works__text
-  max-width: 573px
+  width: 573px
   font-weight: 300
   font-size: 16px
   line-height: 30px
+@media (max-width: 1200px)
+  .page-about-content
+    flex-direction: column-reverse
+  .page-about__img
+    width: 518px
+  .page-about-text
+    width: 100%
+  .about-works img
+    width: 100%
+    margin-right: 0
+  .about-works__text
+    width: 100%
+  .about-works:nth-child(even) img
+    margin-left: 0
+  .about-advantage__text
+    text-align: center
+@media (max-width: 992px)
+  .about__title
+    font-size: 20px
+  .about__title::after
+    margin-top: -5px
+  .page-about-text
+    font-size: 14px
+  .about-page-advantages
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 46px
+  .about-page-advantage
+    width: 200px
+    margin-bottom: 27px
+  .about-works
+    row-gap: 20px

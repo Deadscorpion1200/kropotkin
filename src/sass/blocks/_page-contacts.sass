@@ -85,11 +85,48 @@
   border-radius: 40px
   border: 1px solid #fff
   margin-bottom: 9px
+  font-size: 18px
 .page-contacts__button
   width: 381px
+  font-size: 24px
 @media (min-width: 992px)
   .page-contact__item:hover
     transition: .2s
     &:after
       width: 100%
       transition: .2s
+@media (max-width: 1300px)
+  .page-contacts-map
+    width: 700px
+    overflow: hidden
+@media (max-width: 1200px)
+  .page-contacts-items
+    flex-wrap: wrap
+    justify-content: space-between
+  .page-contact-schedule
+    margin-top: 20px
+@media (max-width: 992px)
+  .page-contact-schedule, .page-contacts-address, .page-contacts-emails, .page-contacts-phones
+    width: 275px
+  .page-contacts-address
+    margin-top: 20px
+@media (max-width: 768px)
+  .page-contacts-contacts
+    flex-direction: column-reverse
+  .page-contacts-map
+    width: 100%
+    margin-bottom: 40px
+  .page-form__input
+    width: 100%
+  .page-contacts__subtitle
+    margin-bottom: 15px
+  .page-form__textarea
+    width: 100%
+    font-size: 14px
+  .page-contacts__button
+    font-size: 18px
+    width: 100%
+  .page-contacts-form
+    width: 100%
+  .page-contacts__form
+    margin-right: 0

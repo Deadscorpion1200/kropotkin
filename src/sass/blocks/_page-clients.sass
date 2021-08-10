@@ -57,7 +57,36 @@
 .page-clients-logos
   display: flex
   justify-content: space-between
+.page-client__logo
+  margin-left: 20px
+  margin-right: 20px
 @media (min-width: 992px)
   .page-clients__client:hover
     transition: .2s
     transform: translateY(-10px)
+@media (max-width: 1300px)
+  .page-clients-clients
+    justify-content: space-around
+@media (max-width: 992px)
+  .page-clients__client
+    width: 325px
+  .page-clients__title
+    font-size: 20px
+  .page-title-wrapper::after
+    margin-top: 2px
+  .page-clients__title::after
+    margin-top: -2px
+  .page-client__logo
+    margin-left: 10px
+    margin-right: 10px
+@media (max-width: 768px)
+  .page-clients__client
+    width: 100%
+@media (max-width: 576px)
+  .page-clients-logos
+    flex-wrap: wrap
+  .page-client__logo
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px
+    width: 200px

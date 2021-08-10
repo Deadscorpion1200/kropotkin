@@ -76,5 +76,39 @@
     color: $light-color
     background: #fff
     border: 1px solid $light-color
-
-  
+@media (max-width: 1200px)
+  .news-wrap
+    justify-content: space-around
+  .news-item
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+@media (max-width: 768px)
+  .news__title
+    font-size: 20px
+  .news-item
+    flex-direction: column
+    width: 210px
+    height: auto
+    & img
+      margin-bottom: 10px
+  .news-text__date
+    margin-bottom: 0
+  .news-item__text
+    margin-left: 0
+  .news-item__img
+    height: 112px
+  .news-text__date
+    font-size: 12px
+  .news-text__title
+    font-size: 12px
+  .news-text__excerpt
+    font-size: 12px
+  .link-more
+    font-size: 14px
+  .news-more
+    width: 100%
+    font-size: 18px
+@media (max-width: 460px)
+  .news-item
+    width: 140px

@@ -14,6 +14,8 @@ h1,h2,h3,h4,h5,h6,p
 .wrapper
   position: relative
   overflow-x: hidden
+h2 span, h3 span
+  font-weight: 300
 .container
   width: 1280px
   margin: 0 auto 0 auto
@@ -38,7 +40,7 @@ input, button, textarea
   outline: none
 input:focus
   border: 1px solid $main-color
-.current-item
+.current-item, .page-catalog__subitem .current-item 
   color: $light-color
 .has-submenu
   position: relative
@@ -146,3 +148,5 @@ input:focus
     & svg
       right: -25px
       transition: .2s
+  .button
+    font-size: 18px

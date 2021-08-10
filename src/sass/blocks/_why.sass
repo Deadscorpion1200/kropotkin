@@ -62,12 +62,46 @@
     width: 29px
     height: 29px
 .why-text
-  max-width: 370px
+  width: 370px
 .why-text__title
   font-size: 35px
   margin-bottom: 6px
 .why-text__descr
   display: block
-  max-width: 300px
+  width: 300px
   font-size: 18px
   font-weight: 300
+@media (max-width: 1200px)
+  .why-wrapper
+    flex-wrap: wrap
+    justify-content: space-around
+  .why-column:last-child
+    margin-top: 20px
+@media (max-width: 992px)
+  .why-wrapper
+    justify-content: flex-start
+  .why-text__title
+    font-size: 20px
+  .why-column
+    margin-bottom: 20px
+  .why-text__descr
+    width: 100%
+@media (max-width: 768px)
+  .why-title__wrapper
+    font-size: 20px
+  .why-title__wrapper:after
+    margin-top: -7px
+    margin-left: 35px
+  .why__title:after
+    margin-left: 35px
+  .why-text__descr
+    font-size: 14px
+  .why-text
+    width: 100%
+  .why-icon
+    width: 51px
+    height: 51px
+    margin-right: 13px
+    & svg
+      width: 24px
+      height: 24px

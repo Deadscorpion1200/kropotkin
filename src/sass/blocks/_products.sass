@@ -68,3 +68,39 @@
   .products-tile:hover
     transition: .2s
     box-shadow: 0px 4px 20px rgba(26, 137, 58, 0.2)
+@media (max-width: 992px)
+  .products__title
+    font-size: 20px
+  .products-tile
+    height: 200px
+    flex-direction: column
+  .products-item
+    width: 345px
+  .product-item__title
+    font-size: 16px
+    text-align: center
+  .product-item__img
+    margin-right: 0
+@media (max-width: 768px)
+  .products-item
+    width: 250px
+@media (max-width: 576px)
+  .products-item
+    width: 200px
+  .products-menu
+    row-gap: 15px
+    column-gap: 15px
+  .product-item__title
+    margin-top: 10px
+    font-size: 12px
+@media (max-width: 435px)
+  .products-item
+    width: 146px
+  .products-menu
+    justify-content: space-around
+  .products-tile
+    height: 165px
+  
+@media (max-width: 340px)
+  .products-item
+    width: 140px

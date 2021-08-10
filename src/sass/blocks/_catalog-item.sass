@@ -1,0 +1,215 @@
+.page-catalog
+  padding-bottom: 50px
+.page-catalog-wrapper
+  display: flex
+  justify-content: space-between
+.page-catalog-sidebar
+  max-width: 319px
+.page-catalog-sidebar__title
+  font-size: 23px
+.page-catalog-content
+  padding-top: 20px
+  max-width: 918px
+  margin-left: 30px
+  & h3
+    margin-bottom: 15px
+    font-size: 30px
+    font-weight: 500
+    margin-top: 20px
+  & p
+    font-size: 16px
+    line-height: 1.68
+    margin-bottom: 20px
+.page-catalog__navigation, .page-catalog__submenu
+  list-style: none
+  padding-left: 0
+  position: relative
+.page-catalog__item 
+  color: #2c2c2c
+.page-catalog__item a
+  width: 100%
+  display: block
+  position: relative
+  padding: 15px 19px 15px 19px
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  margin-bottom: 15px
+  font-weight: 600
+.page-catalog__item svg
+  width: 11px
+  height: 11px
+  position: absolute
+  top: 50%
+  margin-top: -5px
+  right: 21px
+  transform: rotate(180deg)
+.current-item a span
+  color: $light-color
+  & .page-catalog__subitem a span
+    color: #2c2c2c !important
+.current-item svg
+  transform: rotate(0)
+  fill: $light-color
+.page-catalog__subitem a
+  box-shadow: none
+  padding: 0 30px 0 30px
+  font-weight: 400
+.page-catalog-gallery
+  display: flex
+  justify-content: space-between
+.page-catalog-table
+  & table
+    width: 100%
+    border: none
+    border-collapse: collapse 
+    & tr
+      &:nth-child(even)
+        background: #F1F1F1
+        border-radius: 10px
+    & td, th
+      padding: 18px 21px 17px 10px
+      font-size: 12px
+.page-catalog-form
+  display: flex
+  align-items: center
+  justify-content: space-between
+.page-catalog__input
+  height: 69px
+  width: 305px
+  border-radius: 40px
+  border: none
+  background: #EFEFEF
+  padding-left: 32px
+  font-size: 16px
+.page-catalog__button
+  margin-left: 0
+  margin-right: 0
+.page-catalog-contacts p
+  font-size: 18px
+  display: block
+  margin-bottom: 25px
+.page-catalog-contacts a
+  font-weight: 500
+  color: $light-color
+  text-decoration: underline
+.page-catalog-menu__list
+  list-style: none
+  padding-left: 0
+  display: flex
+  flex-wrap: wrap
+  column-gap: 20px
+  row-gap: 20px
+.page-catalog-menu__item
+  height: 120px
+  width: 410px
+  & a
+    width: 100%
+    height: 100px
+    display: flex
+    transition: .2s
+    align-items: center
+    & img
+      margin-right: 20px
+      object-fit: cover
+    & span
+      display: block
+      font-size: 24px
+      font-weight: 600
+      transition: .2s
+.page-catalog-table-wrap
+  overflow-x: scroll
+  & table
+    border-collapse: collapse
+    font-size: 16px
+    & tr
+      height: 50px
+      &:nth-child(even)
+        background: #F1F1F1
+    & th, td
+      text-align: left
+      width: 100px
+      padding: 10px 10px 10px 21px
+.page-catalog-menu__item
+  transition: .2s
+  .products-tile
+    trasition: .2s
+    border: 1px solid #ffffff
+.page-catalog-menu__item:hover
+  transition: .2s
+  .products-tile
+    border: 1px solid $light-color
+    & span
+      color: $light-color
+@media (max-width: 1200px)
+  .page-catalog-content
+    width: 705px
+  .page-catalog-table-wrap
+    overflow: scroll
+    width: 705px
+  .page-catalog-form
+    flex-wrap: wrap
+    justify-content: center
+  .page-catalog__input:first-child
+    margin-right: 15px
+  .page-catalog__button
+    margin-top: 30px  
+  .page-catalog__img
+    width: 200px
+@media (max-width: 992px)
+  .page-services-title-wrap
+    margin-bottom: 15px
+  .page-catalog-content
+    margin-left: 0
+    padding-top: 0  
+  .page-catalog-sidebar
+    display: none
+  .page-catalog-menu__item
+    width: 335px
+  .page-catalog-menu__item a span
+    font-size: 18px
+  .page-catalog-table-wrap
+    overflow: scroll
+    width: 100%
+@media (max-width: 768px)
+  .page-catalog__button
+    font-size: 18px
+    width: 100%
+  .page-catalog__input
+    width: 100%
+    font-size: 14px
+  .page-catalog-content h3
+    font-size: 18px
+    margin-top: 0
+  .page-catalog-content p
+    font-size: 14px
+  .page-catalog-gallery
+    flex-wrap: wrap
+    justify-content: space-around
+  .page-catalog-form
+    flex-direction: column
+  .page-catalog-table-wrap
+    display: none
+  .page-services__title
+    font-size: 20px
+  .page-catalog-menu__item
+    width: 100%
+  .page-catalog-menu__item a span
+    font-size: 14px
+  .page-catalog__input:first-child
+    margin-right: 0
+  .page-catalog__input
+    margin-bottom: 10px
+  .page-catalog__button
+    margin-top: 0
+@media (max-width: 576px)
+  .page-catalog-gallery
+    flex-direction: column
+    .page-catalog__img
+      width: 100%
+      height: 158px
+      margin-bottom: 5px
+      & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block

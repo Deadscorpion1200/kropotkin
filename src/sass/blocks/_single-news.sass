@@ -49,3 +49,26 @@
   margin-top: 36px
   & img
     width: 410px
+@media (max-width: 1200px)
+  .single-news-gallery
+    justify-content: space-around
+    row-gap: 20px
+@media (max-width: 768px)
+  .single-news__title
+    font-size: 20px
+  .single-content__img
+    margin-right: 0
+    width: 100%
+    margin-bottom: 13px
+  .single-news-gallery img
+    width: 230px
+  .single-content__text p
+    font-size: 14px
+@media (max-width: 576px)
+  .single-news-gallery img
+    width: 120px
+@media (max-width: 422px)
+  .single-news__title
+    max-width: 218px
+  .single-news-title::after
+    margin-left: 10px
